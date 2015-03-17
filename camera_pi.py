@@ -26,8 +26,8 @@ class Camera(object):
         with picamera.PiCamera() as camera:
             # camera setup
             camera.resolution = (320, 240)
-            camera.hflip = True
-            camera.vflip = True
+            camera.hflip = False
+            camera.vflip = False
 
             # let camera warm up
             camera.start_preview()
